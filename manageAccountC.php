@@ -83,8 +83,7 @@ $fullname = "$firstname $lastname";
                 <span class="description">
                     These are the information you provided when signing up for this platform.
                     For security reasons, you are not allowed to change them. You and this platform's
-                    Administrator (to help identify who is making a particular request) are the only
-                    ones allowed to see this.
+                    Administrator are the only ones allowed to see this.
                 </span>
             </div>
             <form action="#">
@@ -115,8 +114,7 @@ $fullname = "$firstname $lastname";
         <div class="type">
             <div class="descriptionCont">
                 <span class="description">
-                    This section is where you change your password if you decide to.
-                    Upon successfully changing your password, you'd be logged out and
+                    Once you change your passsword, you'd be logged out and
                     required to sign back in using your newly created password.
                 </span>
             </div>

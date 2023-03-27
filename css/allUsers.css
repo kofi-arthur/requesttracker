@@ -1,0 +1,66 @@
+.allusers {
+    width: 100%;
+    height: 100%;
+    background: #0005;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+}
+
+.allusers.active {
+    visibility: visible;
+}
+
+.allusers .flyout {
+    width: 600px;
+    height: 700px;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.allusers.active .flyout {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.allusers .flyout i {
+    color: crimson;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.allusers .flyout .userProfile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+}
+
+.allusers .flyout .userProfile img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}

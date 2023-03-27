@@ -84,10 +84,9 @@ $fullName = "$firstname $lastName";
         <div class="type">
             <div class="descriptionCont">
                 <span class="description">
-                These are the information you provided when signing up for this platform.
-                For security reasons, you are not allowed to change them. You and this platform's
-                Administrator (to help identify who is making a particular request) are the only
-                ones allowed to see this.
+                    These are the information you provided when signing up for this platform.
+                    For security reasons, you are not allowed to change them. You and this platform's
+                    Administrator are the only ones allowed to see this.
                 </span>
             </div>
             <form action="#">
@@ -112,9 +111,8 @@ $fullName = "$firstname $lastName";
         <div class="type">
             <div class="descriptionCont">
                 <span class="description">
-                This section is where you change your password if you decide to.
-                Upon successfully changing your password, you'd be logged out and 
-                required to sign back in using your newly created password.
+                    Once you change your passsword, you'd be logged out and
+                    required to sign back in using your newly created password.
                 </span>
             </div>
             <form action="./php/changePassword.php" method="POST">
@@ -181,7 +179,7 @@ $fullName = "$firstname $lastName";
                 <img src="./assets/profilePicture/<?php echo $userData["pp"] ?>" id="previewImage" alt="">
             </div>
             <label for="newPP" class="">Upload Picture <i class="fal fa-file-arrow-up"></i></label>
-            <input type="file" name="newPP" id="newPP" class="hidden" accept=".jpeg,.jpg,.png"  />
+            <input type="file" name="newPP" id="newPP" class="hidden" accept=".jpeg,.jpg,.png" />
             <button type="submit" name="changePicture">Save <i class="fal fa-check"></i></button>
         </div>
     </form>

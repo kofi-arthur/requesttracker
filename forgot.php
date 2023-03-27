@@ -33,9 +33,6 @@
             You will recieve an email with a verification code needed to reset your password.
         </p>
 
-        <!-- hidden -->
-
-
         <div class="field">
             <label for="email">Email</label>
             <input type="email" name="email" placeholder="eg. john.doe@wayoeltd.com" required />

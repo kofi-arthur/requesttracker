@@ -11,7 +11,7 @@
 .notify {
     position: absolute;
     min-width: 220px;
-    max-width: 220px;
+    max-width: auto;
     height: auto;
     background-color: var(--success);
     top: -100px;

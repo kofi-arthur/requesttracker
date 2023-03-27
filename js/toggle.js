@@ -59,3 +59,20 @@ function toggleReset(name, email) {
     spanEmail.innerHTML = email;
     sendEmail.value = email;
 }
+
+// USER DETAIL POP-UP
+
+const viewUser = document.getElementById('allUsers');
+const userProfile = document.getElementById('userProfile');
+const userName = document.getElementById('userName');
+const userEmail = document.getElementById('userEmail');
+const userDepartment = document.getElementById('userDepartment');
+
+function toggleUser(name, email, department, image) {
+    viewUser.classList.toggle('active');
+    var imageLoc = './assets/profilePicture/' + image;
+    userProfile.src = imageLoc;
+    userName.innerText = name;
+    userEmail.innerText = email;
+    userDepartment.innerText = department;
+}

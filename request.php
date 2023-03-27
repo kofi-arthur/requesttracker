@@ -24,10 +24,10 @@
         </div>
 
         <nav>
-            <a href="#" class="navLink"><i class="fas fa-home"></i>Home</a>
-            <a href="./pendingA.php" class="navLink"><i class="fas fa-file-chart-column"></i>Pending Requests</a>
-            <a href="./completedA.php" class="navLink"><i class="fas fa-file-check"></i>Completed Requests</a>
-            <a href="./unsuccessfulA.php" class="navLink"><i class="fas fa-file-xmark"></i>Unsuccessful Requests</a>
+            <a href="./index.php" class="navLink"><i class="fas fa-home"></i>Home</a>
+            <a href="./pending.php" class="navLink"><i class="fas fa-file-chart-column"></i>Pending Requests</a>
+            <a href="./completed.php" class="navLink"><i class="fas fa-file-check"></i>Completed Requests</a>
+            <a href="./unsuccessful.php" class="navLink"><i class="fas fa-file-xmark"></i>Unsuccessful Requests</a>
         </nav>
 
         <nav>

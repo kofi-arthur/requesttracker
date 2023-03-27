@@ -12,6 +12,7 @@ require '../plugins/PHPMailer/src/SMTP.php';
 
 // notoficiations 
 
+$errorMail = "<div class='notice'><p>Couldn't complete request. Please trya again later.</p></div>";
 $error = "<div class='notice'><p>This email doesn't exist in our records</p></div>";
 
 if (isset($_POST["send"])) {
@@ -29,6 +30,7 @@ if (isset($_POST["send"])) {
         $mail = new PHPMailer(true);
 
         try {
+
             //Enableverbosedebug output
             $mail->SMTPDebug = 0; //SMTP::DEBUB_SERVER;
 
@@ -73,12 +75,9 @@ if (isset($_POST["send"])) {
             mysqli_query($conn, $sql);
 
             header("Location: ../verify.php?email=" . $email);
-
-            echo "error";
             exit();
         } catch (Exception $e) {
             $mailError = "<div class='notice'><p>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p></div>";
-
             $_SESSION['notice'] = $mailError;
             header("Location: {$_SERVER['HTTP_REFERER']}");
         }

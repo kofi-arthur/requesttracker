@@ -33,6 +33,7 @@ $allUsers = mysqli_query($conn, "SELECT * FROM `users` ORDER BY `firstName` ASC"
     <link rel="stylesheet" href="./css/notification.css">
     <link rel="stylesheet" href="./css/details.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/allUsers.css">
 </head>
 
 <body>
@@ -104,12 +105,13 @@ $allUsers = mysqli_query($conn, "SELECT * FROM `users` ORDER BY `firstName` ASC"
                             $fn = $result['firstName'];
                             $ln = $result['lastName'];
                             $name = $fn . ' ' . $ln;
+                            $department = $result['department'];
                         ?>
                             <tr>
                                 <td><?php echo $name ?></td>
-                                <td><?php echo $result['department'] ?></td>
+                                <td><?php echo $department ?></td>
                                 <td><?php echo $result['email'] ?></td>
-                                <td><a>View User</a></td>
+                                <td><a onclick="toggleUser(name='<?php echo $name; ?>', email='<?php echo $result['email'] ?>', department='<?php echo $department; ?>', image='<?php echo $result['pp']; ?>')">View User</a></td>
                                 <td><a onclick="toggleReset(name='<?php echo $name; ?>',email='<?php echo $result['email'] ?>')">Reset Password</a></td>
                             </tr>
                         <?php
@@ -159,6 +161,23 @@ $allUsers = mysqli_query($conn, "SELECT * FROM `users` ORDER BY `firstName` ASC"
             <input type="hidden" id="sendEmail" name="email">
             <button type="submit" name="send">Reset</button>
         </form>
+
+    </section>
+
+    <section class="allusers active" id="allUsers">
+
+        <div class="flyout">
+
+            <i class="fas fa-times" onclick="toggleUser()"></i>
+
+            <div class="userProfile">
+                <img src="" id="userProfile" alt="" />
+            </div>
+
+            <h1 class="userName" id="userName"></h1>
+
+
+        </div>
 
     </section>
 
