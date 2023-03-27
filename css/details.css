@@ -1,0 +1,148 @@
+:root {
+  --darkBlue: #001a30;
+  --white: #fff;
+  --orange: #fe6505;
+  --orangeBg: #f89c7a50;
+  --orangeBgLight: #ffc1aa25;
+}
+
+.detail-pop-up {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background-color: #0005;
+  position: relative;
+}
+
+.detail-pop-up.disabled {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.detail-pop-up .wrapper {
+  width: 450px;
+  height: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: inherit;
+}
+
+.detail-pop-up .wrapper i.close {
+  width: 100%;
+  text-align: right;
+  font-size: 24px;
+  color: crimson;
+  cursor: pointer;
+}
+
+.detail-pop-up .wrapper .header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.detail-pop-up .wrapper .header .profilePicture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  margin-right: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.detail-pop-up .wrapper .header .profilePicture img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.detail-pop-up .wrapper .header .info {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-pop-up .wrapper .header .info h3 {
+  font-size: 20px;
+  margin-bottom: -5px;
+}
+
+.detail-pop-up .wrapper .header .info span {
+  color: var(--orange);
+  font-size: 13px;
+}
+
+.detail-pop-up .wrapper span {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--orange);
+}
+
+.detail-pop-up .wrapper h3 {
+  /* font-size: 24px; */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.detail-pop-up .wrapper p {
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: 250px;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.detail-pop-up .wrapper .action-buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+
+.detail-pop-up .wrapper .action-buttons a{
+  padding: 5px 8px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+a.complete {
+  background-color: #00aa00;
+}
+
+a.complete:hover {
+  background-color: #008b00;
+}
+
+a.unsuccessful {
+  background-color: crimson;
+}
+
+a.unsuccessful:hover {
+  background-color: #9b0d29;
+}
+
+a.pending {
+  background-color: goldenrod;
+}
+
+a.pending:hover {
+  background-color: #a37c18;
+}

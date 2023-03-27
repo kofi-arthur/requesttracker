@@ -1,0 +1,106 @@
+:root {
+    --darkBlue: #001a30;
+    --white: #fff;
+    --orange: #fe6505;
+    --orangeBg: #f89c7a50;
+    --orangeBgLight: #ffc1aa25;
+  }
+
+.ppContainer {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #0005;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+}
+
+.ppContainer.hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ppContainer .wrapper {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+
+.ppContainer .wrapper i.closePP {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: crimson;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ppContainer .wrapper h3 {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.ppContainer .wrapper .dpContainer {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    border: 4px solid var(--orange);
+}
+
+.ppContainer .wrapper .dpContainer img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.ppContainer .wrapper label {
+    padding: 7px 10px;
+    background-color: #1bb481;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.ppContainer .wrapper label i {
+    margin-left: 5px;
+}
+
+.ppContainer .wrapper label:hover {
+    background-color: #139469;
+}
+
+.ppContainer .wrapper .hidden {
+    display: none;
+}
+
+.ppContainer .wrapper button {
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: var(--orange);
+}
+
+.ppContainer .wrapper button i {
+    margin-left: 5px;
+}
+
+.ppContainer .wrapper button:hover {
+    background-color:#c74d01;
+}

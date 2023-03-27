@@ -1,0 +1,81 @@
+.main .tableContainer {
+  width: 100%;
+  height: 83%;
+  overflow-y: auto;
+}
+
+.main .tableContainer .subSectionTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main .tableContainer .subSectionTitle h4 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.main .tableContainer .subSectionTitle a {
+  color: var(--orange);
+}
+
+.main .tableContainer table {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-collapse: collapse;
+}
+
+.main .tableContainer table thead {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--orange);
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.main .tableContainer table thead tr th {
+  padding: 10px 0;
+  text-align: left;
+}
+
+.main .tableContainer table thead tr th:first-child {
+  padding-left: 10px;
+}
+
+.main .tableContainer table thead tr th.description {
+  width: 600px;
+}
+
+.main .tableContainer table tbody tr {
+  width: 100%;
+  height: 50px;
+}
+
+.main .tableContainer table tbody tr:hover {
+  background-color: var(--orangeBg);
+}
+
+.main .tableContainer table tbody tr td.info {
+  width: 600px;
+  padding-top: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.main .tableContainer table tbody tr td:first-child {
+  padding-left: 10px;
+}
+
+.main .tableContainer table tbody tr a {
+  color: var(--orange);
+  font-weight: 500;
+  cursor: pointer;
+}

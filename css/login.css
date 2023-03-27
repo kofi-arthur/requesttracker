@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --darkBlue: #001a30;
+  --white: #fff;
+  --orange: #fe6505;
+  --orangeBg: #f89c7a50;
+  --orangeBgLight: #ffc1aa25;
+  --darkOrange: #da5300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeed;
+}
+
+body form {
+  width: 470px;
+  min-height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 0px 17px -10px#0005;
+  margin-bottom: 30px;
+}
+
+form.create-form {
+  min-height: 70px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+form.create-form p {
+  margin-bottom: 0;
+}
+
+body form .logo {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body form .logo img {
+  position: absolute;
+  width: 35%;
+  /* height: 100%; */
+  object-fit: contain;
+}
+
+body form .multi-field {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+body form .field {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+body form .field label {
+  font-size: 12px;
+  color: var(--orange);
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+}
+
+body form .field select {
+  width: 90%;
+  padding: 7px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+select:focus {
+  border: none;
+  outline: 1px solid var(--orange);
+}
+
+body form .field input {
+  width: 90%;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3337;
+  transition: 0.3s;
+}
+
+body form .field input:focus {
+  outline: none;
+  width: 100%;
+  border-bottom: 1px solid var(--orange);
+  background: transparent;
+}
+
+.field i {
+  position: absolute;
+  color: var(--orange);
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body form a.forgot {
+  font-size: 14px;
+  color: var(--orange);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+body form button {
+  width: 100px;
+  padding: 13px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--orange);
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+body form button:hover {
+  background-color: var(--darkOrange);
+}
+
+body form button:focus {
+  outline: none;
+  background-color: var(--darkOrange);
+}
+
+body form .create {
+  font-size: 14px;
+}
+
+form h3 {
+  margin-bottom: 5px;
+}
+
+form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+body form .create a {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+body form .create a:focus {
+  outline: none;
+  color: var(--darkOrange);
+}
+
+p span.email {
+  color: var(--orange);
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  bottom: 0;
+}
+
+span.powered {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  text-align: center;
+  color: #0007;
+  font-size: 12px;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
